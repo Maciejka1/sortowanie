@@ -1,0 +1,16 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap');
+a,p,h1,h2{
+  font-family: 'Poppins', sans-serif;
+}
+html{
+  scroll-behavior: smooth;
+}
+a:hover{
+  text-decoration:  underline;
+}
+header{
+  @apply font-bold text-5xl md:text-6xl mt-24
+}
+.container{
+  @apply xl:px-0 mx-auto px-2 max-w-[1224px]
+}
