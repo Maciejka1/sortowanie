@@ -10,8 +10,7 @@ export default function Routing(){
     return(
     <AnimatePresence>
         <Routes location={location} key={location.pathname}>
-            <Route path='/' element={<Main/>} />
-            <Route path='/bubblesort' element={<BubbleSort/>} />
+            <Route path='/' element={<BubbleSort/>} />
             <Route path='*' element={<Error/>}/>
         </Routes>
     </AnimatePresence>

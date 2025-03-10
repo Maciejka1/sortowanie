@@ -18,16 +18,9 @@ export default function Nav(){
               </div>
           </div>
           <nav className={" z-20 flex flex-col right-[-100%] items-center justify-center w-screen h-screen fixed md:justify-between md:w-[1224px] md:h-12 md:right-0 md:left-0 md:flex-row md:rounded-full pr-2 " + styles.nav} style={{right: navControl}}> 
-          <div className="md:h-full md:flex-row flex-col flex items-center justify-center">
-            <img src="https://unsplash.it/200/200" alt="logo" className="h-20 mt-8 md:m-0 md:h-full rounded-full"/>
-            <h1 className="md:ml-2 text-lg">Name</h1>
-          </div>
             <ul className="flex flex-col justify-items-center items-center mb-10 my-12 gap-3 font-semibold text-4xl md:text-2xl md:mb-0 md:flex-row md:my-0">
                 <Link to="/bubblesort" onClick={resizeNavOnClick}>
                     <li>Sortowanie Bąbelkowe</li>
-                </Link>
-                <Link to="/bubblesort" onClick={resizeNavOnClick}>
-                    <li>Get in touch</li>
                 </Link>
             </ul>
           </nav>
