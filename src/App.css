@@ -14,3 +14,7 @@ header{
 .container{
   @apply xl:px-0 mx-auto px-2 max-w-[1224px]
 }
+.link{
+  text-decoration: underline;
+  font-weight: 700;
+}

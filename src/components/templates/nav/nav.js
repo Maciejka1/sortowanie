@@ -1,7 +1,6 @@
 import React from 'react'
 import styles from './nav.module.css'
-// import logo from '../../images/logo.webp'
-import {FaYoutube, FaDiscord, FaBars, FaTiktok, FaTimes} from 'react-icons/fa'
+import {FaBars} from 'react-icons/fa'
 import {Link} from 'react-router-dom'
 export default function Nav(){
     const [navControl, setNavControl] = React.useState()
@@ -24,33 +23,13 @@ export default function Nav(){
             <h1 className="md:ml-2 text-lg">Name</h1>
           </div>
             <ul className="flex flex-col justify-items-center items-center mb-10 my-12 gap-3 font-semibold text-4xl md:text-2xl md:mb-0 md:flex-row md:my-0">
-                <Link to="/" onClick={resizeNavOnClick}>
-                    <li>Home</li>
+                <Link to="/bubblesort" onClick={resizeNavOnClick}>
+                    <li>Sortowanie Bąbelkowe</li>
                 </Link>
-                <Link to="/contact" onClick={resizeNavOnClick}>
+                <Link to="/bubblesort" onClick={resizeNavOnClick}>
                     <li>Get in touch</li>
                 </Link>
             </ul>
-              <ul className="flex flex-col justify-items-center items-center mb-10 gap-3 font-semibold text-xl md:mb-0 md:flex-row">
-                  <a href="https://www.tiktok.com/@merostudios" target="blank">
-                      <li className='text-3xl '>
-                          <FaTiktok/>
-                      </li>
-                  </a>
-                  <a href="https://discord.gg/QnxXUCqeWz" target="blank" >
-                      <li className='text-4xl text-indigo-600'>
-                          <FaDiscord/>
-                      </li>
-                  </a>
-                  <a href="https://www.youtube.com/channel/UCMcQuc_vdqUpssXgfN6Lwhg" target="blank" >
-                      <li className='text-4xl '>
-                          <FaYoutube className='text-red-500'/>
-                      </li>
-                  </a>
-              </ul>
-              <div className="text-6xl md:hidden" onClick={() => setNavControl('-100%')}>
-                  <FaTimes/>
-              </div>
           </nav>
       </div>
     );
